@@ -1,0 +1,10 @@
+<ul>
+  <% @event_list.items.each do |event| %>
+    <li><%= event.methods.sort %></li>
+    <li><%= event.start.date_time %></li>
+    <li><%= event.end.date_time %></li>
+    <% end_time = event.end.date_time.to_s.match(/[A-Z](\d)(\d):(\d)(\d)/) %>
+    <%= end_time.to_s.slice(1..-1) %>
+  <% end %>
+</ul>
+
