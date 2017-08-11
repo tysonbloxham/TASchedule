@@ -1,0 +1,42 @@
+<%= form_with(model: request, local: true) do |form| %>
+  <% if request.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(request.errors.count, "error") %> prohibited this request from being saved:</h2>
+
+      <ul>
+      <% request.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :request_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :request_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ta_selected %>
+    <%= form.text_field :ta_selected, id: :request_ta_selected %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time_requested %>
+    <%= form.datetime_select :time_requested, id: :request_time_requested %>
+  </div>
+
+  <div class="field">
+    <%= form.label :day_requested %>
+    <%= form.date_select :day_requested, id: :request_day_requested %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

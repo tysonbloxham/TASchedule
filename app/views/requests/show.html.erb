@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @request.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @request.description %>
+</p>
+
+<p>
+  <strong>Ta selected:</strong>
+  <%= @request.ta_selected %>
+</p>
+
+<p>
+  <strong>Time requested:</strong>
+  <%= @request.time_requested %>
+</p>
+
+<p>
+  <strong>Day requested:</strong>
+  <%= @request.day_requested %>
+</p>
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>
