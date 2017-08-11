@@ -1,1 +1,30 @@
 @import 'bootstrap';
+
+.allign {
+	
+	display: inline-block;
+}
+
+.img-circular1{
+ width: 200px;
+ height: 200px;
+ background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkdqNfsGmwrHXyD_qa7035cbOLhEvIPj9hsKww9AgxkqrGvkmT2Z-lbSok');
+ background-size: cover;
+ display: block;
+}
+
+.img-circular2{
+ width: 200px;
+ height: 200px;
+ background-image: url('http://4.bp.blogspot.com/-_pyfNe_HzRU/T-bd2n3UI7I/AAAAAAABjOY/QsgSIpGOCAw/s1600/cartoon+picture+(2).png');
+ background-size: cover;
+ display: block;
+}
+
+.img-circular3{
+ width: 200px;
+ height: 200px;
+ background-image: url('https://cdn.pixabay.com/photo/2014/10/02/15/41/loin-470302__340.png');
+ background-size: cover;
+ display: block;
+}
